@@ -27,9 +27,8 @@ class YouTubeDebugger extends React.Component{
   rclick(){
     this.setState(
       {settings: Object.assign({}, this.state.settings, {
-        video: Object.assign({}, this.state.settings.video, {
-          resolution: "720p"
-          })
+        video:
+          {resolution: "720p"}
         })
       }
     )
